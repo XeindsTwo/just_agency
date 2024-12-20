@@ -1,0 +1,43 @@
+.home {
+  &__title {
+    font-family: $vela;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.02;
+    max-width: 1150px;
+    text-align: center;
+    margin: 0 auto 35px;
+    letter-spacing: -1.28px;
+  }
+
+  &__text {
+    color: rgba($white, .65);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 880px;
+    margin: 0 auto 48px;
+  }
+
+  &__links {
+    @include flex-align-center(15);
+    justify-content: center;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 50;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__decor {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__grid {
+    position: absolute;
+    top: 0;
+  }
+}

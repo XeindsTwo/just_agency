@@ -1,0 +1,20 @@
+@import 'vendor/reset';
+@import 'vendor/fonts';
+@import 'vendor/vars';
+@import 'vendor/mixin';
+@import 'vendor/global';
+@import 'vendor/libs';
+
+@import "components/menu-btn";
+@import "components/btn";
+@import "components/footer";
+@import "components/header";
+@import "components/title-section";
+@import "components/form-elements";
+@import "components/modal";
+
+@import "home/home";
+@import "home/benefits";
+@import "home/clients";
+@import "home/bloggers";
+@import "home/contacts";

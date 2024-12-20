@@ -1,0 +1,16 @@
+.title-section {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family: $vela;
+  letter-spacing: -1.12px;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--big {
+    font-size: 64px;
+    line-height: 1.05;
+  }
+}

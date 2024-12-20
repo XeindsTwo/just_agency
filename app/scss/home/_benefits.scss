@@ -1,0 +1,65 @@
+.benefits {
+  position: relative;
+  z-index: 50;
+
+  &__title {
+    font-family: $vela;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 109%;
+    letter-spacing: -1.12px;
+    max-width: 605px;
+    margin-bottom: 60px;
+
+    span {
+      color: #D1FC56;
+      position: relative;
+
+      &::before {
+        @include bg;
+        @include pseudo;
+        bottom: -9px;
+        left: 0;
+        width: 100%;
+        height: 16px;
+        background-image: url("../images/icons/line-wave.svg");
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__card {
+    @include flex-column(30);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: #0E0E0C;
+    box-shadow: 0 4px 21.2px 0 rgba(255, 255, 255, 0.04) inset;
+    padding: 45px;
+  }
+
+  &__icon {
+    @include flex-center;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15.5px 0 rgba(255, 255, 255, 0.12) inset;
+    filter: drop-shadow(0px 4px 39.9px rgba(0, 0, 0, 0.18));
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: -0.4px;
+    margin-top: auto;
+
+    &.short {
+      max-width: 350px;
+    }
+  }
+}

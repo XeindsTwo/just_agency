@@ -1,0 +1,39 @@
+.contacts {
+  margin-bottom: 200px;
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 50;
+  }
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    max-width: 860px;
+    color: rgba($white, .65);
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 48px;
+  }
+
+  &__link {
+    margin: 0 auto;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__link {
+    &:hover {
+      background-color: $white;
+      color: #21211A;
+      border-color: transparent;
+    }
+  }
+}
