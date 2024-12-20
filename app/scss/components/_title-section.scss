@@ -4,6 +4,25 @@
   font-weight: 700;
   font-family: $vela;
   letter-spacing: -1.12px;
+  @media (max-width: 1300px) {
+    font-size: 52px;
+  }
+  @include r($desktop) {
+    font-size: 48px;
+  }
+  @include r($lg) {
+    font-size: 44px;
+  }
+  @include r($tablet) {
+    font-size: 40px;
+  }
+  @include r($sm) {
+    font-size: 36px;
+  }
+  @include r($phone) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
 
   &--center {
     text-align: center;
