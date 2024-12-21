@@ -7,9 +7,48 @@
     display: grid;
     grid-gap: 50px 60px;
     grid-template-columns: repeat(5, 1fr);
+    @include r($desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include r($lg) {
+      grid-gap: 40px;
+    }
+    @include r($tablet) {
+      grid-gap: 30px;
+    }
+    @media (max-width: 575px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 460px;
+      margin: 0 auto;
+    }
+    @include r($phone) {
+      grid-gap: 33px 20px;
+    }
 
     li {
       @include flex-center;
+
+      img {
+        @include objectCoverBg;
+        @media (max-width: 1100px) {
+          width: 90%;
+        }
+        @media (max-width: 860px) {
+          width: 84%;
+        }
+        @include r($tablet) {
+          width: 80%;
+        }
+        @media (max-width: 575px) {
+          width: 75%;
+        }
+        @include r($phone) {
+          width: 83%;
+        }
+      }
     }
   }
 }

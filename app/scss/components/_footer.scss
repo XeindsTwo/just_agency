@@ -1,24 +1,42 @@
 .footer {
+  position: relative;
+  z-index: 5;
   padding: 25px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
   background: linear-gradient(18deg, rgba(6, 6, 5, 0.90) 12.07%, rgba(13, 13, 10, 0.90) 120.85%);
-  backdrop-filter: blur(555px);
+  @media (max-width: 1100px) {
+    padding: 23px 0 18px;
+  }
 
   &__inner {
     @include flex-align-center(30);
     justify-content: space-between;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
+    @media (max-width: 540px) {
+      gap: 45px;
+    }
   }
 
   &__element {
     max-width: 280px;
     width: 100%;
+    @include r($desktop) {
+      max-width: 230px;
+    }
+    @media (max-width: 1100px) {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   &__list {
     @include flex-align-center(29);
-    @media (max-width: 1060px) {
+    @media (max-width: 540px) {
       flex-direction: column;
-      align-items: flex-start;
+      gap: 22px;
     }
   }
 

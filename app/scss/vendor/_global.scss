@@ -56,6 +56,15 @@
 
 .indent {
   margin-bottom: 150px;
+  @include r($desktop) {
+    margin-bottom: 120px;
+  }
+  @media (max-width: 940px) {
+    margin-bottom: 100px;
+  }
+  @include r($phone) {
+    margin-bottom: 80px;
+  }
 }
 
 .sr-only {

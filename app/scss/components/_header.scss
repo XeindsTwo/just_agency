@@ -4,6 +4,18 @@
   margin-bottom: 104px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   background: linear-gradient(18deg, rgba(13, 13, 10, 0.50) 12.07%, rgba(6, 6, 5, 0.50) 120.85%);
+  @media (max-width: 1400px) {
+    margin-bottom: 80px;
+  }
+  @include r($desktop) {
+    margin-bottom: 55px;
+  }
+  @include r($tablet) {
+    margin-bottom: 45px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
+  }
 
   &::before {
     @include pseudo;

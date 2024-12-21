@@ -1,15 +1,61 @@
 .contacts {
   margin-bottom: 200px;
+  @media (max-width: 1300px) {
+    margin-bottom: 150px;
+  }
+  @include r($desktop) {
+    margin-bottom: 120px;
+  }
+  @include r($lg) {
+    margin-bottom: 100px;
+  }
+  @include r($sm) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 510px) {
+    margin-bottom: 70px;
+  }
 
   &__content {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
     z-index: 50;
+    @media (max-width: 1300px) {
+      max-width: 960px;
+    }
+    @include r($desktop) {
+      max-width: 910px;
+    }
+    @media (max-width: 1100px) {
+      max-width: 870px;
+    }
   }
 
   &__title {
     margin-bottom: 36px;
+    @media (max-width: 1100px) {
+      max-width: 840px;
+      margin: 0 auto 30px;
+    }
+    @include r($tablet) {
+      max-width: 640px;
+    }
+    @media (max-width: 680px) {
+      font-size: 38px;
+    }
+    @include r($sm) {
+      font-size: 34px;
+    }
+    @media (max-width: 550px) {
+      font-size: 32px;
+    }
+    @media (max-width: 510px) {
+      font-size: 30px;
+    }
+    @include r($phone) {
+      font-size: 28px;
+    }
   }
 
   &__text {
@@ -27,6 +73,13 @@
   &__decor {
     position: absolute;
     bottom: 0;
+    @media (max-width: 1100px) {
+      @include objectCoverBg;
+      height: 580px;
+    }
+    @media (max-width: 540px) {
+      height: 750px;
+    }
   }
 
   &__link {

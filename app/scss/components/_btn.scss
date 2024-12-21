@@ -11,6 +11,9 @@
   background-color: #D1FC56;
   border: 1px solid transparent;
   transition: background-color .4s, border .4s, color .4s, transform .6s;
+  @media (max-width: 420px) {
+    font-size: 15px;
+  }
 
   &:hover {
     background-color: #567021;
