@@ -64,6 +64,10 @@
     font-weight: 400;
     text-align: center;
     margin: 0 auto 48px;
+
+    &.short {
+      max-width: 730px;
+    }
   }
 
   &__link {

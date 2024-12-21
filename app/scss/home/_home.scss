@@ -91,6 +91,10 @@
     @include r($phone) {
       margin-bottom: 34px;
     }
+
+    &.short {
+      max-width: 720px;
+    }
   }
 
   &__links {
@@ -141,8 +145,8 @@
       height: 180px;
     }
     @media (max-width: 430px) {
-      height: 160px;
-      object-position: -2.8cm center;
+      height: 190px;
+      object-position: -4.1cm center;
     }
   }
 
