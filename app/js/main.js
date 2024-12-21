@@ -3,6 +3,13 @@ const menuBtn = document.querySelector('.menu-btn');
 const headerNav = document.querySelector('.header__mobile');
 const anchors = document.querySelectorAll('a.header__link.mobile');
 
+menuBtn.addEventListener('click', () => {
+  menuBtn.blur();
+  html.classList.toggle('active');
+  menuBtn.classList.toggle('active');
+  headerNav.classList.toggle('active');
+});
+
 function scrollToTarget(targetId) {
   const targetSection = document.querySelector(targetId);
   if (targetSection) {
@@ -10,7 +17,7 @@ function scrollToTarget(targetId) {
     headerNav.classList.remove('active');
     menuBtn.classList.remove('active');
     setTimeout(() => {
-      const targetOffset = targetSection.offsetTop - 50;
+      const targetOffset = targetSection.offsetTop - 30;
       window.scrollTo({top: targetOffset, behavior: 'smooth'});
     }, 400);
   }
